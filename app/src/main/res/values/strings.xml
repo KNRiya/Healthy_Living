@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Healthy_Living</string>
+    <string name="option1">Daily Medicines</string>
+    <string name="option2">Vitals</string>
+    <string name="option3">Reminders</string>
+    <string name="option4">Health History</string>
+    <string name="option5">Appoinments</string>
+    <string name="option6">Resistant Medicines</string>
+    <string name="option7">Map</string>
+</resources>

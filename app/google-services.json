@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "325480970185",
+    "firebase_url": "https://healthy-living-f9977.firebaseio.com",
+    "project_id": "healthy-living-f9977",
+    "storage_bucket": "healthy-living-f9977.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325480970185:android:95ca9627e08dac19cf1a18",
+        "android_client_info": {
+          "package_name": "com.example.healthy_living"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325480970185-pfb2i6m51snd8jbmqesbt41gamvijant.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3A--JcHy0lDtk8T9CgE7MSodzkoGDrYE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325480970185-pfb2i6m51snd8jbmqesbt41gamvijant.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
