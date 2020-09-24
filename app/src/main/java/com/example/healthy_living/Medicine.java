@@ -1,17 +1,17 @@
 package com.example.healthy_living;
 
-public class Medicine
+public class Medicine   //Model class for each Medicine
 {
 
    public Medicine(){}
 private String mName;
 private String times;
 
-    public Medicine(String mName, String times) {
+    public Medicine(String mName, String times) {       //constractor of medicine class
         this.mName = mName;
         this.times = times;
     }
-
+                                                        // getter and setter methods
     public String getmName() {
         return mName;
     }

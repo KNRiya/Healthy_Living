@@ -39,7 +39,7 @@ public class DailyMedicines extends AppCompatActivity {
         mAdopter=new MAdopter(DailyMedicines.this,medicineList);
 
 
-
+                                             //Method for going to Main UI
       homeButton.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View view) {
@@ -57,11 +57,16 @@ public class DailyMedicines extends AppCompatActivity {
     }
 
     @Override
+                                /*
+                        onStart method to load all the instances from db to a the Medicine List
+                        as a list view
+                                 */
     protected void onStart() {
         mDatabaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot datasnapshot) {
                 medicineList.clear();
+                            //load all the instances one by one with this for loop
                 for (DataSnapshot dataSnapshot1 : datasnapshot.getChildren())
                 {
                     Medicine medicine= dataSnapshot1.getValue(Medicine.class);
