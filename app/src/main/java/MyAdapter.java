@@ -8,5 +8,8 @@ import com.example.healthy_living.FoodData;
 import com.example.healthy_living.R;
 
 public class MyAdapter {
+
+
+
 }
 
