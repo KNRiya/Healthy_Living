@@ -4,13 +4,84 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Vitals">
+    android:weightSum="4"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Vitals"
+    android:background="@color/liteGreen">
 
-    <TextView
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/option2"
-        ></TextView>
+        android:layout_margin="10dp"
+        android:background="@color/cardview_light_background"
+        android:id="@+id/bmi">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@color/materialPink"
+            android:padding="10dp"
+            android:src="@drawable/vitals" />
+
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option8"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp">
+        </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/materialPink"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/cardview_light_background"
+        android:id="@+id/diet">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@color/materialPink"
+            android:padding="10dp"
+            android:src="@drawable/vitals" />
+
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option9"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp">
+        </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/materialPink"
+            />
+    </LinearLayout>
+
 
 </LinearLayout>

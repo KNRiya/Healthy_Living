@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="10dp"
-    android:background="@color/liteRed"
+    android:background="@color/materialPink"
     >
 
    <EditText

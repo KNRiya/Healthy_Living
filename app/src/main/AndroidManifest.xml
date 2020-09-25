@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddToRMedicine"></activity>
+        <activity android:name=".FoodData"></activity>
+        <activity android:name=".Diet" />
+        <activity android:name=".BMI" />
+        <activity android:name=".AddToRMedicine" />
         <activity android:name=".AddToDailyMedicine" />
         <activity android:name=".Map" />
         <activity android:name=".ResistantMedicines" />
