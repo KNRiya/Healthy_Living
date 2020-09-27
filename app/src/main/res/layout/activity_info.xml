@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Submit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="227dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:text="        Doctor's Appointment "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtTxtFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="   Enter  Your Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/edtTxtAge"
+        android:layout_width="164dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="    Enter Your Age"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtFullName"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtFullName"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtFullName" />
+
+    <EditText
+        android:id="@+id/etdTxtDoctorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter The Doctor's Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtFullName"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtFullName"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtAge" />
+
+    <EditText
+        android:id="@+id/edtTxtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="    Appointment date"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/etdTxtDoctorName"
+        app:layout_constraintStart_toStartOf="@+id/etdTxtDoctorName"
+        app:layout_constraintTop_toBottomOf="@+id/etdTxtDoctorName" />
+
+    <EditText
+        android:id="@+id/edtTxtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Your Contact Number"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtDate"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtDate"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtDate" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="132dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="70dp"
+        android:onClick="onSubmitBtnClick"
+        android:text="SUBMIT"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtPhone"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtPhone"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtPhone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
