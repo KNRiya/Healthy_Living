@@ -1,16 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Appoinments">
+    tools:context=".MainActivity">
 
     <TextView
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/option5"
-        ></TextView>
+        android:id="@+id/textView"
+        android:layout_width="227dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="40dp"
+        android:background="#FFFFFF"
+        android:capitalize="sentences"
+        android:text="    Book An Appointment"
+        android:textColorLink="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/Dermatology"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="onDermatologyBtnClick"
+        android:text="Dermatology"
+        app:layout_constraintBottom_toTopOf="@+id/Medicine"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/Medicine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Medicine"
+        app:layout_constraintEnd_toEndOf="@+id/Dermatology"
+        app:layout_constraintStart_toStartOf="@+id/Dermatology"
+        app:layout_constraintTop_toBottomOf="@+id/Dermatology" />
+
+    <Button
+        android:id="@+id/Newrology"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="NEWROLOGY"
+        app:layout_constraintEnd_toEndOf="@+id/Medicine"
+        app:layout_constraintStart_toStartOf="@+id/Medicine"
+        app:layout_constraintTop_toBottomOf="@+id/Medicine" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
