@@ -8,4 +8,5 @@
     <string name="option5">Appoinments</string>
     <string name="option6">Resistant Medicines</string>
     <string name="option7">Map</string>
+    <string name="title_activity_location">Map</string>
 </resources>

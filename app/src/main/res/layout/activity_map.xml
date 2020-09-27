@@ -4,13 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Map">
+    tools:context=".Map"
+    android:background="@color/p">
 
     <TextView
+
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/option7"
         ></TextView>
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginLeft="110dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mapToLocation"
+        android:text="Find Locations"
+        android:textColor="@color/pink"
+        ></Button>
 
 </LinearLayout>
