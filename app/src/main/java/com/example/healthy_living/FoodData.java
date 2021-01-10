@@ -63,6 +63,8 @@ public class FoodData extends AppCompatActivity {
     public class ViewHolder {
         public ViewHolder(View itemView) {
 
+
+
         }
     }
 }
